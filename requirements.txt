@@ -1,0 +1,9 @@
+pandas
+numpy
+torch
+scikit-learn
+flask
+flask-socketio
+nba_api
+matplotlib
+jupyter

@@ -1,0 +1,1 @@
+# Converts the the live game info into feature vector 

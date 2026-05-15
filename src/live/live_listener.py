@@ -1,0 +1,1 @@
+# POLLS THE NBA API EVERY FEW SECONDS - we do this in order to get live poll updates
