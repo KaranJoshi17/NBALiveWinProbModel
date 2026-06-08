@@ -5,20 +5,30 @@ from nba_api.stats.endpoints import playbyplayv3
 
 def build_game_states(pbp_df):
 
-    home_score = 0
-    away_score = 0
+    snapshots = []
 
+    for _, row in pbp_df.itterows():
 
-    period = 0
-    clock = 0
-    score_diff = 0 
+        action_type = row["actionType"]
 
-    for each row in playbyplayv3:
-    {
-        action = actionType
+        if action_type != "Made Shot":
+            continue
 
-        if action == "Made shot":
-            
+        home_score = row["scoreHome"]
+        away_score = row["scoreAway"]
 
-    }
+        score_diff = home_score - away_score
+
+        snapshot = {
+            "period": row["period"],
+            "clock": row("clock"),
+            "home_score": home_score, 
+            "away_score": away_score,
+            "score_diff": score_diff
+        }
+
+        snapshots.append(snapshot)
+
+    return pd.DataFrame(snapshots) 
+    
   

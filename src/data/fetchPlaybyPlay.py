@@ -11,4 +11,4 @@ df = pbp.get_data_frames()[0]
 
 print(df.columns)
 pd.set_option('display.max_columns', None)
-print(df.head(15).to_string())
+print(df.head(20).to_string())
