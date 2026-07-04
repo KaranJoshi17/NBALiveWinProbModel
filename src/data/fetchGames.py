@@ -1,7 +1,5 @@
 # fetches the game ids and stuff 
 
-import fetchPlayers
-
 import pandas as pd 
 from nba_api.stats.static import teams
 from nba_api.stats.endpoints import leaguegamefinder , boxscoretraditionalv3 , playergamelog
